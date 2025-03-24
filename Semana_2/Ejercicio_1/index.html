@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor Gs a USD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Convertidor de Guaraníes a Dólares</h2>
+        <label for="monto">Monto en Gs:</label>
+        <input type="number" id="monto" placeholder="Ingrese monto en Gs">
+        
+        <label for="cambio">Tipo de Cambio:</label>
+        <input type="number" id="cambio" placeholder="Ingrese el tipo de cambio">
+        
+        <button onclick="convertir()">Convertir</button>
+        
+        <h3>Resultado: <span id="resultado">0 USD</span></h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

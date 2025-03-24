@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Propina</title>
+    <!-- Vinculamos el archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Cálculo de Propina</h2>
+        <p>Ingresa el monto total de la cuenta y el porcentaje de propina:</p>
+        
+        <label for="monto">Monto total de la cuenta:</label>
+        <input type="number" id="monto" placeholder="Monto de la cuenta" required>
+        
+        <label for="porcentaje">Porcentaje de propina (%):</label>
+        <input type="number" id="porcentaje" placeholder="Porcentaje de propina" required>
+        
+        <button onclick="calcularPropina()">Calcular Propina</button>
+        
+        <div id="resultado" class="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
