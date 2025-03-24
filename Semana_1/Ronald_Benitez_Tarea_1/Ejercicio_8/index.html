@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Tarea</title>
+    <style>
+        /* Estilo general del cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        /* Formulario */
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            width: 50%;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form input, form button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Sección principal */
+        section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Títulos */
+        h1 {
+            color: #333;
+            font-size: 28px;
+        }
+
+        h4 {
+            color: #666;
+        }
+
+        /* Imagen */
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Tablas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Listas desordenadas */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            background-color: #f0f8ff; /* Fondo celeste claro */
+            padding: 12px;
+            margin-bottom: 8px;
+            font-size: 18px; /* Tamaño del texto más grande */
+            border: 2px solid #007acc; /* Borde azul */
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+        }
+
+        ul li::before {
+            content: "🔵"; /* Ícono personalizado */
+            margin-right: 10px;
+            color: #007acc; /* Color azul del ícono */
+            font-size: 20px;
+        }
+
+        /* Listas ordenadas */
+        ol {
+            padding-left: 20px;
+            font-size: 18px;
+        }
+
+        ol li {
+            margin-bottom: 5px;
+        }
+
+        /* Características */
+        .caracteristicas {
+            background-color: #e3f2fd;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Un Ambiente Saludable</h1>
+    </header>
+
+    <hr>
+
+    <form>     
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" placeholder="Correo" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <section> 
+        <article>  
+            <h1>Red Inalámbrica de Sensores</h1>
+            <h4>Fuentes de Información: 
+                <a href="https://redeswsn.blogspot.com/" target="_blank">Página</a>
+            </h4>
+
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn73umeWviRlEKgO62QAsrxY89lyHPew01ppIE8Mn0d2Tydx6qBqnGpBzGHWPquL0CFtBF9iF4_nC-ovNytRuZ535o58hOQAW_AMl5H2jZtDvpWTrSmmr-u4RUFnwxgUso4HhaBmi5HtQ/s1600/WSN_Logger_System_Diagram.jpg" 
+                 alt="Diagrama de sistema de una red de sensores inalámbrica">
+
+            <h3>Datos de partículas</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>PM 2.5</th>
+                        <th>PM 10</th>
+                        <th>PM 20</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>20 µm</td>
+                        <td>16 µm</td>  
+                        <td>14 µm</td>
+                    </tr>
+                    <tr>
+                        <td>10 µm</td>
+                        <td>15 µm</td>
+                        <td>10 µm</td>
+                    </tr>
+                    <tr>
+                        <td>20 µm</td>
+                        <td>8 µm</td>
+                        <td>12 µm</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Clasificación</h3>
+            <ul>
+                <li>Sensores Humedad</li>
+                <li>Sensores Atmosferico</li>
+                <li>Sensores Particulas</li>
+                <li>Sensores de Temperatura</li>
+                <li>Sensores de Lluvia</li>
+            </ul>
+
+            <h3>Tipos de Sensores</h3>
+            <ol>
+                <li>Según Sensibilidad</li>
+                <li>Según Potencia</li>
+            </ol>
+
+        </article>   
+    </section>
+
+    <div class="caracteristicas">
+        <h3>Características</h3>
+        <p>
+            - Permiten a los dispositivos conectarse a una red mientras se mueven.<br>
+            - Se pueden implementar a diferentes escalas, como locales, amplias o globales.<br>
+            - Utilizan tecnología de microondas e infrarrojos.<br>
+            - Son fáciles de configurar y escalar.<br>
+            - Son compatibles entre dispositivos.
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; Todos los derechos reservados - Ronald Benítez</p>
+    </footer>
+
+</body>
+</html>

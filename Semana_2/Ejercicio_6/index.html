@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Producto con IVA</title>
+    <!-- Vinculamos el archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Cálculo de Producto con IVA</h2>
+        <p>Ingresa el monto del producto:</p>
+        
+        <label for="monto">Monto del producto:</label>
+        <input type="number" id="monto" placeholder="Ingresa el monto" required>
+        
+        <button onclick="calcularConIVA()">Calcular con IVA</button>
+        
+        <div id="resultado" class="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
